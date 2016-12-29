@@ -1,3 +1,28 @@
-<h1>
-  {{title}}
-</h1>
+<div class="container">
+  <nav class="navbar navbar-default">
+    <div class="navbar-header">
+      <a class="navbar-brand" routerLink="/dashboard"></a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li>
+        <a routerLink="/home">Home</a>
+      </li>
+      <li>
+        <a routerLink="/findTicket">Find a Ticket</a>
+      </li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li>
+        <!-- We'll show the login link if the user is not currently logged in -->
+        <!--<a (click)=authService.login() *ngIf="!authService.loggedIn()">Log In</a>-->
+      </li>
+      <li>
+        <!-- On the other hand, if the user is logged in, we'll show a log out link -->
+        <!--<a (click)=authService.logout() *ngIf="authService.loggedIn()">Log Out</a>-->
+      </li>
+    </ul>
+  </nav>
+  <div class="col-sm-12">
+    <router-outlet></router-outlet>
+  </div>
+</div>
