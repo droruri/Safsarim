@@ -1,5 +1,4 @@
 import {NgModule}              from '@angular/core';
-import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import {RouterModule, Routes}  from '@angular/router';
 import {AboutComponent} from '../about/about.component';
 import {FindTicketComponent} from '../find-ticket/find-ticket.component';
@@ -11,7 +10,7 @@ const appRoutes: Routes = [
 
 @NgModule({
   imports: [
-    RouterModule.forRoot(appRoutes), NgbModule
+    RouterModule.forRoot(appRoutes)
   ],
   exports: [
     RouterModule
