@@ -9,6 +9,8 @@ import { FindTicketComponent } from './find-ticket/find-ticket.component';
 import { AppRoutingModule } from "./app-routing/app-routing.module";
 import { AboutComponent } from './about/about.component';
 
+import {LeagueServiceService} from "./league-service.service";
+
 
 @NgModule({
   declarations: [
@@ -23,7 +25,7 @@ import { AboutComponent } from './about/about.component';
     NgbModule.forRoot(),
     AppRoutingModule
   ],
-  providers: [],
+  providers: [LeagueServiceService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
